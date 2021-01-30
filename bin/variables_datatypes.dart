@@ -40,12 +40,16 @@ void main() {
   /*Constant and Final Keyword 
     const : compile-time check and declare once never be reassigned
     final : a constant variable that never changes
+    dynamic: run time type checking variable
   
   */
   const pi = 3.1416;
-  final id = 1811655042;
+  final int id = 1811655042;
+  dynamic dynamicVar = 10;
+  dynamicVar = true;
   print(pi);
   print(id);
+  print(dynamicVar);
 
   /*  Concatination  */
   String myName = "Sayed";
@@ -54,4 +58,13 @@ void main() {
   print("Hey Listen:");
   print("$myName, is in $semester semester at $university");
   print("My Name in Upper Case: ${myName.toUpperCase()}");
+
+  /* 
+    * Dart is a statically typed languages- type checked at compiled time
+    * Dart uses Type Inference Using var Keyword
+    * final keyword used to read only variable
+    * const keyword used for compile time constant
+    * Best Practice const>final> var 
+    * dynamic keword used to opt-out of type safety
+  */
 }
